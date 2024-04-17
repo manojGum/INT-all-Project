@@ -1,0 +1,433 @@
+{
+	"info": {
+		"_postman_id": "747ad7d4-6e67-4257-9826-96c164236813",
+		"name": "ecommerceapi deploye by cycle Copy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23257083"
+	},
+	"item": [
+		{
+			"name": "product post request",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDFkMzdkMjIzNzdlNjRiYTg2ZTE5MmMiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2Nzk2MzY1ODQsImV4cCI6MTY3OTcyMjk4NH0.PCy1Rp5OX8GJbf2tteH2HH7M1bDQvH5XKBhKSMpSsDI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDFkMzdkMjIzNzdlNjRiYTg2ZTE5MmMiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2Nzk2MzY1ODQsImV4cCI6MTY3OTcyMjk4NH0.PCy1Rp5OX8GJbf2tteH2HH7M1bDQvH5XKBhKSMpSsDI",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\":\"product 1\",\r\n  \"description\":\"product 1 description\",\r\n  \"richDescription\":\"product 1 richDescription\",\r\n  \"image\":\"product1/image.jpg\",\r\n  \"brand\":\"product1 brand\",\r\n  \"price\":25,\r\n  \"category\":\"641d3917dd2bbf57acfeef70\",\r\n  \"countInStock\":100,\r\n  \"rating\":4,\r\n  \"numreviews\":22,\r\n  \"isFeatured\":true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://dull-red-cape-buffalo-tie.cyclic.app/api/v1/products",
+					"protocol": "https",
+					"host": [
+						"dull-red-cape-buffalo-tie",
+						"cyclic",
+						"app"
+					],
+					"path": [
+						"api",
+						"v1",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "products all item get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dull-red-cape-buffalo-tie.cyclic.app/api/v1/products",
+					"protocol": "https",
+					"host": [
+						"dull-red-cape-buffalo-tie",
+						"cyclic",
+						"app"
+					],
+					"path": [
+						"api",
+						"v1",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "products single item get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dull-red-cape-buffalo-tie.cyclic.app/api/v1/products/638852f941ec21959cfe2429",
+					"protocol": "https",
+					"host": [
+						"dull-red-cape-buffalo-tie",
+						"cyclic",
+						"app"
+					],
+					"path": [
+						"api",
+						"v1",
+						"products",
+						"638852f941ec21959cfe2429"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "categories added",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDFkMzdkMjIzNzdlNjRiYTg2ZTE5MmMiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2Nzk2MzY1ODQsImV4cCI6MTY3OTcyMjk4NH0.PCy1Rp5OX8GJbf2tteH2HH7M1bDQvH5XKBhKSMpSsDI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"computer\",\r\n    \"icon\":\"icon-computer\",\r\n    \"color\":\"#045455\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://dull-red-cape-buffalo-tie.cyclic.app/api/v1/categories",
+					"protocol": "https",
+					"host": [
+						"dull-red-cape-buffalo-tie",
+						"cyclic",
+						"app"
+					],
+					"path": [
+						"api",
+						"v1",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "categories get all categories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dull-red-cape-buffalo-tie.cyclic.app/api/v1/categories",
+					"protocol": "https",
+					"host": [
+						"dull-red-cape-buffalo-tie",
+						"cyclic",
+						"app"
+					],
+					"path": [
+						"api",
+						"v1",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "categories get single categories by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dull-red-cape-buffalo-tie.cyclic.app/api/v1/categories/6388442f7dd7632315fee8e1",
+					"protocol": "https",
+					"host": [
+						"dull-red-cape-buffalo-tie",
+						"cyclic",
+						"app"
+					],
+					"path": [
+						"api",
+						"v1",
+						"categories",
+						"6388442f7dd7632315fee8e1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "categories delete   by id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://dull-red-cape-buffalo-tie.cyclic.app/api/v1/categories/6388467455289ba434b74303",
+					"protocol": "https",
+					"host": [
+						"dull-red-cape-buffalo-tie",
+						"cyclic",
+						"app"
+					],
+					"path": [
+						"api",
+						"v1",
+						"categories",
+						"6388467455289ba434b74303"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "categories update by id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"health 2\",\r\n    \"icon\": \"icon-health 1\",\r\n    \"color\": \"#050505\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://dull-red-cape-buffalo-tie.cyclic.app/api/v1/categories/6388442f7dd7632315fee8e1",
+					"protocol": "https",
+					"host": [
+						"dull-red-cape-buffalo-tie",
+						"cyclic",
+						"app"
+					],
+					"path": [
+						"api",
+						"v1",
+						"categories",
+						"6388442f7dd7632315fee8e1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login user",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzhkYjFiODY4NzUzZWJlODczYjlmMjEiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2NzAyNDEzNzUsImV4cCI6MTY3MDMyNzc3NX0.buf_-hAjMbVey6mIFuQY3qJWza89wIa7tlZVfrrJba4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n     \"email\":\"manojgum@gmail.com\",\r\n    \"passwordHasd\":\"manojgum\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://dull-red-cape-buffalo-tie.cyclic.app/api/v1/users/login",
+					"protocol": "https",
+					"host": [
+						"dull-red-cape-buffalo-tie",
+						"cyclic",
+						"app"
+					],
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "single user find",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"manoj kumar\",\r\n    \"email\":\"manojgum@gmail.com\",\r\n    \"passwordHash\":\"123456\",\r\n    \"phone\":\"+9155882223\",\r\n    \"isAdmin\":true,\r\n    \"street\":\"hari nager\",\r\n    \"apprtment\":\"apartment 202\",\r\n    \"zip\":\"700102\",\r\n    \"city\":\"kolkata\",\r\n    \"country\":\"India\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://dull-red-cape-buffalo-tie.cyclic.app/api/v1/users/638daf35e849f95070b79aca",
+					"protocol": "https",
+					"host": [
+						"dull-red-cape-buffalo-tie",
+						"cyclic",
+						"app"
+					],
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"638daf35e849f95070b79aca"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "users register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"manoj kumar\",\r\n    \"email\":\"manojgum1@gmail.com\",\r\n    \"passwordHasd\":\"manojgum\",\r\n    \"phone\":7909012986,\r\n    \"isAdmin\":\"true\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://dull-red-cape-buffalo-tie.cyclic.app/api/v1/users/register",
+					"protocol": "https",
+					"host": [
+						"dull-red-cape-buffalo-tie",
+						"cyclic",
+						"app"
+					],
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "orders",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzhkYjFiODY4NzUzZWJlODczYjlmMjEiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2NzAzMTgyMTYsImV4cCI6MTY3MDQwNDYxNn0.lNRXh3zhPAP1AzjsAa-BoGthxpMhBXLURQ-OrQHVVbI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderItems\":[{\r\n        \"quantity\":3,\r\n        \"product\":\"6388531806ce339067e94611\"\r\n    },\r\n    {\r\n        \"quantity\":3,\r\n        \"product\":\"638852f941ec21959cfe2429\"\r\n    }\r\n    ],\r\n    \"shippingAddress1\": \"Flowers Street , 45\",\r\n    \"shippingAddress2\": \"1-B\",\r\n    \"city\":\"koklata\",\r\n    \"zip\":\"000000\",\r\n    \"country\":\"india\",\r\n    \"phone\":\"+91995587\",\r\n    \"user\":\"638db1b868753ebe873b9f21\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://dull-red-cape-buffalo-tie.cyclic.app/api/v1/orders",
+					"protocol": "https",
+					"host": [
+						"dull-red-cape-buffalo-tie",
+						"cyclic",
+						"app"
+					],
+					"path": [
+						"api",
+						"v1",
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "orders",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzhkYjFiODY4NzUzZWJlODczYjlmMjEiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2NzAzMTgyMTYsImV4cCI6MTY3MDQwNDYxNn0.lNRXh3zhPAP1AzjsAa-BoGthxpMhBXLURQ-OrQHVVbI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dull-red-cape-buffalo-tie.cyclic.app/api/v1/orders",
+					"protocol": "https",
+					"host": [
+						"dull-red-cape-buffalo-tie",
+						"cyclic",
+						"app"
+					],
+					"path": [
+						"api",
+						"v1",
+						"orders"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
